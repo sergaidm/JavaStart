@@ -6,30 +6,21 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Vvedite predlojenie");
+		System.out.println("Input sentence: ");
 		String text = sc.nextLine();
 
-		System.out.println("Kolichestvo slov v predlojenii = " + countWords(text));
+		System.out.println("Number of words in the sentence = " + countWords(text));
 
 	}
 
 	public static int countWords(String text) {
-		int count = 1;
 
-		char[] s = { ' ', '.', ',', ':', ';', '!', '?' };
-		char[] t = text.toCharArray();
-
-		for (int i = 0; i < t.length; i++) {
-			int j = 0;
-			if (t[i] != s[j]) {
-				j++;
-				continue;
-			} else {
-				count++;
-			}
+		String[] t = text.split("[ ]");
+		int i = 0;
+		while (i < t.length) {
+			i++;
 		}
-
-		return count;
+		return i;
 	}
 
 }
