@@ -11,13 +11,13 @@ public class Main {
 		double c;
 		double d;
 		double max;
-		System.out.println("Vvedite chislo a");
+		System.out.println("Input number a");
 		a = sc.nextDouble();
-		System.out.println("Vvedite chislo b");
+		System.out.println("Input number b");
 		b = sc.nextDouble();
-		System.out.println("Vvedite chislo c");
+		System.out.println("Input number c");
 		c = sc.nextDouble();
-		System.out.println("Vvedite chislo d");
+		System.out.println("Input number d");
 		d = sc.nextDouble();
 		if ((d >= c) & (d >= b) & (d >= a)) {
 			max = d;
@@ -28,10 +28,9 @@ public class Main {
 		} else if ((a >= d) & (a >= b) & (a >= c)) {
 			max = a;
 		} else {
-			max = Double.valueOf("Net takogo chisla");
+			max = Double.valueOf("There is no such number");
 		}
-
-		System.out.println("Maximal'noe chislo = " + max);
+		System.out.println("The maximum number = " + max);
 
 	}
 
