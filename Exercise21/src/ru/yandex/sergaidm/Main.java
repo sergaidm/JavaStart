@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int number;
-		System.out.println("Vvedite pyatiznachnoe chislo");
+		System.out.println("Input a five-digit number");
 		number = sc.nextInt();
 		System.out.println(number);
 		int c1 = number / 10000;
