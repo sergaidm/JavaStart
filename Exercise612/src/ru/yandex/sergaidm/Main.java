@@ -7,15 +7,13 @@ public class Main {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Vvedite predlojenie");
-		String a = sc.nextLine();
-		System.out.println("Vvedite celoe chislo: ");
-		int b = sc.nextInt();
-		System.out.println("Vvedite veshestvennoe chislo: ");
-		double c = sc.nextDouble();
-
-		String d = getConcat(a, b, c);
-		System.out.println("Konkatenaciya stroki s summoy chisel: " + d);
+		System.out.println("Input text: ");
+		String text = sc.nextLine();
+		System.out.println("Input integer number: ");
+		int i = sc.nextInt();
+		System.out.println("Input fractional number: ");
+		double d = sc.nextDouble();
+		System.out.println("Concatenate a string with a sum of numbers: " + getConcat(text, i, d));
 	}
 
 	public static String getConcat(String a, int b, double c) {
