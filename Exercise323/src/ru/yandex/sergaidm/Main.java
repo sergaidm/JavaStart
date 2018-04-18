@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+		
 		Scanner sc = new Scanner(System.in);
 		int number;
-		System.out.println("Vvedite chislo iz 4 cifr");
+		System.out.println("Input a four-digit number: ");
 		number = sc.nextInt();
 		int c1 = number / 1000;
 		int c2 = number % 1000 / 100;
@@ -22,9 +23,9 @@ public class Main {
 			s2 = 1 + (s2 % 10);
 		}
 		if (s1 == s2) {
-			System.out.println("Chislo yavlyaetsya schastlivym biletom");
+			System.out.println("This number is a \"lucky ticket\"");
 		} else {
-			System.out.println("Chislo schastlivym biletom ne yavlyaetsya");
+			System.out.println("This number is not a \"lucky ticket\"");
 		}
 
 	}
