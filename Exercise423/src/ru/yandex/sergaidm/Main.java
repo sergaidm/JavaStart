@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+		
 		Scanner sc = new Scanner(System.in);
 		int w = 0;
-		System.out.println("Vvedite shirinu pesochnyh chasov");
+		System.out.println("Input the hourglass width: ");
 		w = sc.nextInt();
 		if (w % 2 != 0) {
-
 			int p1 = 1;
 			int p2 = w;
 			for (int i = 1; i <= w; i++) {
@@ -21,7 +21,6 @@ public class Main {
 						} else {
 							System.out.print(" ");
 						}
-
 					} else {
 						if ((j >= p2) & (j <= p1)) {
 							System.out.print("*");
@@ -33,10 +32,10 @@ public class Main {
 				System.out.println();
 				p1++;
 				p2--;
-
 			}
 		} else {
-			System.out.println("Vvedite nechetnoe chislo");
+			System.out.println("Input odd number");
 		}
 	}
+	
 }
