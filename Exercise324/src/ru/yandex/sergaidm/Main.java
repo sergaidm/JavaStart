@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+
 		Scanner sc = new Scanner(System.in);
 		int number;
-		System.out.println("Vvedite chislo iz 6 cifr");
+		System.out.println("Input a six-digit number: ");
 		number = sc.nextInt();
 		int c1 = number / 100000;
 		int c2 = number % 100000 / 10000;
@@ -16,9 +17,9 @@ public class Main {
 		int c5 = number % 100 / 10;
 		int c6 = number % 10;
 		if ((c1 == c6) & (c2 == c5) & (c3 == c4)) {
-			System.out.println("Chislo yavlyaetsya palindromom");
+			System.out.println("This number is a palindrome");
 		} else {
-			System.out.println("Chislo palindromom ne yavlyaetsya");
+			System.out.println("This number is not a palindrome");
 		}
 
 	}
