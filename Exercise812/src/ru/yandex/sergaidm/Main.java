@@ -1,11 +1,8 @@
 package ru.yandex.sergaidm;
 
-//Create a method to save a two-dimensional array of integers into a text file.
-
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -24,7 +21,6 @@ public class Main {
 			for (int j = 0; j < array[0].length; j++) {
 				array[i][j] = (int) (Math.random() * 100);
 			}
-
 		}
 
 		File file = new File("Matrix.txt");
@@ -35,7 +31,6 @@ public class Main {
 	}
 
 	public static void saveTextToFile(String text, File file) {
-
 		try (PrintWriter pw = new PrintWriter(file)) {
 			pw.println(text);
 		} catch (IOException e) {
