@@ -17,7 +17,7 @@ public class Main {
 		}
 	}
 
-	static int[][] loadArrayFromFile(String fileName) {
+	public static int[][] loadArrayFromFile(String fileName) {
 		File fLoad = new File(fileName);
 		if (!fLoad.exists() || fLoad.isDirectory()) {
 			System.out.println("File not found. Returns a zero-size array");
@@ -42,7 +42,7 @@ public class Main {
 		return array;
 	}
 
-	static int[] calculateArraySize(File file) {
+	public static int[] calculateArraySize(File file) {
 		int[] array = { 0, 0 };
 		int n = 0;
 		int k = 0;
